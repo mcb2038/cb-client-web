@@ -20,7 +20,7 @@ Method 2 returns `li` DOM nodes, which are then appended to the list we created 
 */
 
 function addSourcesToPage(sources) {
-    const list = document.getElementById("WaterSources");
+    const list = document.getElementById('WaterSources');
 
     for (let i = 0; i < sources.length; i++) {
         let li = createListItem(sources[i]);
@@ -35,13 +35,13 @@ Returns an `li` DOM node with the data inside.
 */
 
 function createListItem(data) {
-    const listItem = document.createElement("li");
+    const listItem = document.createElement('li');
     listItem.innerHTML = data.name;
 
-    let paragraph = document.createElement("p");
+    let paragraph = document.createElement('p');
     paragraph.innerHTML = "Discharge (cubic feet per second): " + data.discharge;
 
     listItem.appendChild(paragraph);
 
     return listItem;
-}    
+}
